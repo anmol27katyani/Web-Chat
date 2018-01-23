@@ -5,4 +5,6 @@ var io = require('socket.io').listen(server);
 user =[];
 connections = [];
 server .listen(process.env.PORT || 3000);
-app.get('/',function)
+app.get('/',function(req,res){
+	res.sendFile(__dirname + '/index.html');
+});
