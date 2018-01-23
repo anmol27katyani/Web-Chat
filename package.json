@@ -1,0 +1,14 @@
+{
+  "name": "web-chat",
+  "version": "1.0.0",
+  "description": "Simple Chat application",
+  "main": "server.js",
+  "scripts": {
+    "test": " "
+  },
+  "author": "Anmol Mishra",
+  "dependencies": {
+    "socket.io": "*",
+    "express": "~4.15.5"
+  }
+}
