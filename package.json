@@ -9,6 +9,6 @@
   "author": "Anmol Mishra",
   "dependencies": {
     "socket.io": "*",
-    "express": "~4.15.5"
+    "express": "~4.16.2"
   }
 }
