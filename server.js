@@ -14,8 +14,11 @@ io.sockets.on('connection',function (socket) {
 	connections.push(socket);
 	console.log('Connected: %s sockets Connected',connections.length());
 	
-	//Disconnect
+	//
+	socket.on('Disconnect',function(data){
+		
 	connections.splice(connections.indexOf(socket),1);
 	console.log('Disconnected: %s sockets connected',connections.length());
 
+	});
 });
