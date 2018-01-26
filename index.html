@@ -2,8 +2,34 @@
 <html>
 <head>
 	<title>IO chat</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-git.min.js"></script>
+	<script type="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+	<style >
+		body{
+			margin-top: 30px;
+		}
+	</style>
+
 </head>
 <body>
- Hey this is my test fo node in here
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<h3>Online Users</h3>
+				<ul class="list-group" id="users"></ul>
+			</div>
+			<div class="col-md-8">
+				<div class="chat" id="chat"></div>
+				<form id="messageForm">
+					<div class="form-group">
+						<label>Enter message</label>
+						<textarea class="form-control" id="message"></textarea>     
+						<br>
+						<input type="submit" value="Send Message" class="btn btn-primary"></div>
+				</form>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
